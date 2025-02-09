@@ -34,12 +34,10 @@ public class Produto {
         
     /**
      * Inicializador privado. Os valores default em caso de erro são:
-     * "Produto sem descrição", R$0.01, 1 unidade, 0 unidades 
+     * "Produto sem descrição", R$ -0.01, -0.01  
      * @param desc Descrição do produto (mínimo 3 caracteres)
      * @param precoCusto Preço do produto (mínimo 0.01)
-     * @param quant Quantidade atual no estoque (mínimo 0)
-     * @param estoqueMinimo Estoque mínimo (mínimo 0)
-     * @param validade Data de validade passada como parâmetro
+     * @param margemLucro Margem de lucro (mínimo 0.01)
      */
     private void init(String desc, double precoCusto, double margemLucro){
                
@@ -52,25 +50,21 @@ public class Produto {
 
     /**
      * Construtor completo. Os valores default em caso de erro são:
-     * "Produto sem descrição", R$0.01, 1 unidade, 0 unidades 
+     * "Produto sem descrição", R$ -0.01, -0.01  
      * @param desc Descrição do produto (mínimo 3 caracteres)
-     * @param preco Preço do produto (mínimo 0.01)
-     * @param quant Quantidade atual no estoque (mínimo 0)
-     * @param estoqueMinimo Estoque mínimo (mínimo 0)
-     * @param validade Data de validade passada como parâmetro
+     * @param precoCusto Preço do produto (mínimo 0.01)
+     * @param margemLucro Margem de lucro (mínimo 0.01)
      */
     public Produto(String desc, double precoCusto, double margemLucro){
         init(desc, precoCusto, margemLucro);
     }
 
     /**
-     * Construtor sem estoque mínimo - fica considerado como 0. 
+     * Construtor sem margem de lucro - fica considerado o valor padrão de margem de lucro.     
      * Os valores default em caso de erro são:
-     * "Produto sem descrição", R$0.01, 1 unidade, 0 unidades 
+     * "Produto sem descrição", R$ -0.01
      * @param desc Descrição do produto (mínimo 3 caracteres)
-     * @param preco Preço do produto (mínimo 0.01)
-     * @param quant Quantidade atual no estoque (mínimo 0)
-     * @param validade Data de validade passada como parâmetro
+     * @param precoCusto Preço do produto (mínimo 0.01)
      */
     public Produto(String desc, double precoCusto){
         init(desc, precoCusto, MARGEM_PADRAO);
