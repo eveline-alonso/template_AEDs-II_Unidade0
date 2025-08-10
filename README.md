@@ -1,6 +1,6 @@
-# AED-II: Revisão e nivelamento
-Atividade revisão e nivelamento em AED-II, abordando recursividade, programação orientada por objetos e uso de arquivos texto.
+# AEDs II: Revisão e Nivelamento
+Atividade de revisão e nivelamento da disciplina de AEDs II, abordando programação orientada por objetos e uso de arquivos texto.
 
-## Alunos integrantes da equipe
+## Aluno
 
-* Nome completo do aluno 1
+* Nome completo do aluno
