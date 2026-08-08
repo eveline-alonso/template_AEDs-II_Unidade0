@@ -17,7 +17,7 @@ public class Produto {
 	private void init(String desc, double precoCusto, double margemLucro) {
 		
 		if ((desc.length() >= 3) && (precoCusto > 0.0) && (margemLucro > 0.0)) {
-			descricao = desc;
+			this.descricao = desc;
 			this.precoCusto = precoCusto;
 			this.margemLucro = margemLucro;
 		} else {
